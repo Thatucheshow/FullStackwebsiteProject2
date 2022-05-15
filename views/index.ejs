@@ -16,12 +16,12 @@
       >
     </h2>
     <h3>Meet the team....</h3>
-    <ul>
-        <% for(let i = 0; i < staff.length; i++){ %> 
+      <% for(let i = 0; i < staff.length; i++){ %>
+        <ul> 
             <a href="/staffs/<%=staff[i].id%>"><li>Name: <%=staff[i].name%></li></a>
             <li>Position: <%=staff[i].position%></li>
-            <br>
-        <% } %>
-    </ul>
+        </ul>
+      <% } %>
+    <p><a href ='/staffs/new'>Add New Staff</a></p>  
   </body>
 </html>

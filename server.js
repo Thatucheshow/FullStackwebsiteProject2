@@ -40,7 +40,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(express.static('public'));
 
 // populates req.body with parsed info from forms - if no data from forms will return an empty object {}
-app.use(express.urlencoded({ extended: false }));// extended: false - does not allow nested objects in query strings
+app.use(express.urlencoded({ extended: true }));// extended: false - does not allow nested objects in query strings
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
 
 //use method override
@@ -57,10 +57,14 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 
-app.get('/staffs', (req, res) =>{
-  Staff.find({}, (err, allStaff) => {
-    //console.log(err)
-    res.render('index.ejs', {staff: allStaff})
+app.get('staffs/new', (req, res)=>{
+  console.log('done')
+  res.render('new.ejs')
+})
+
+app.post('/staffs', (req, res) => {
+  Staff.create(req.body, (err, createdStaffs) => {
+    res.redirect('/staffs')
   })
 })
 
@@ -69,6 +73,15 @@ app.get('/staffs/:id', (req, res) => {
     res.render('show.ejs', {staff: foundInfo})
   })
 })
+
+app.get('/staffs', (req, res) =>{
+  Staff.find({}, (err, allStaff) => {
+    //console.log(err)
+    res.render('index.ejs', {staff: allStaff})
+  })
+})
+
+
 
 //localhost:3000
 app.get('/' , (req, res) => {
