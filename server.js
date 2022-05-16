@@ -57,6 +57,10 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 
+app.get('/', (req, res)=>{
+  res.redirect('/staffs')
+})
+
 app.get('/staffs/new', (req, res)=>{
   console.log('done')
   res.render('new.ejs')
