@@ -57,6 +57,18 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 
+app.put('/staffs/:id', (req, res) => {
+  Staff.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedModel) => {
+    res.redirect('/staffs')
+  })
+})
+
+app.delete('/staffs/:id', (req, res) =>{
+  Staff.findByIdAndRemove(req.params.id, (err, removeStaff)=>{
+    res.redirect('/staffs')
+  })
+})
+
 app.get('/', (req, res)=>{
   res.redirect('/staffs')
 })
@@ -75,6 +87,13 @@ app.post('/staffs', (req, res) => {
 app.get('/staffs/:id', (req, res) => {
   Staff.findById(req.params.id, (err, foundInfo) =>{
     res.render('show.ejs', {staff: foundInfo})
+  })
+})
+
+
+app.get('/staffs/:id/edit', (req, res) =>{
+  Staff.findById(req.params.id, (err, editStaff) => {
+    res.render('edit.ejs', {staff: editStaff})
   })
 })
 

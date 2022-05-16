@@ -21,6 +21,11 @@
         <ul> 
             <a href="/staffs/<%=staff[i].id%>"><li>Name: <%=staff[i].name%></li></a>
             <li>Position: <%=staff[i].position%></li>
+            <a href="/staffs/<%=staff[i].id%>/edit">Edit</a>
+            <form action="/staffs/<%=staff[i].id%>?_method=DELETE" method="POST">
+              <input type="submit" value="DELETE">
+            </form>
+            
         </ul>
       <% } %>
     <p><a href ='/staffs/new'>Add New Staff</a></p>  

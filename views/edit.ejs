@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Edit <%=staff.name%></h1>
+    <form action="/staffs/<%=staff.id%>?_method=PUT" method="POST">
+      Name: <input type="text" name="name" value="<%=staff.name%>" /> <br />
+      <br />
+      Position: <input type="text" name="name" value="<%=staff.position%>" />
+      <br />
+      <br />
+      Age: <input type="text" name="name" value="<%=staff.age%>" /> <br />
+      <br />
+      Years at U Corp:
+      <input type="text" name="name" value="<%=staff.yearsAtCompany%>" /> <br />
+      <br />
+      Hometown: <input type="text" name="name" value="<%=staff.hometown%>" />
+      <br />
+      <br />
+      <input type="submit" value="Submit Changes" />
+    </form>
+    <a href="/staffs">Homepage</a>
+  </body>
+</html>
