@@ -7,27 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
-    <h1>Welcome to the U corp</h1>
-    <h2>
-      We are a company that specializes in the
+  <body class="index_page">
+    <h1 class="header h1">Welcome to U Corp.</h1>
+    <h2 class="header h2">
+      We are a company that specialize in
       <b
-        >running, updating and maintainance of mobile and decktop applications
+        >installing, updating and maintainance of mobile and decktop applications
         and software.</b
       >
     </h2>
-    <h3>Meet the team....</h3>
-      <% for(let i = 0; i < staff.length; i++){ %>
-        <ul> 
-            <a href="/staffs/<%=staff[i].id%>"><li>Name: <%=staff[i].name%></li></a>
-            <li>Position: <%=staff[i].position%></li>
-            <a href="/staffs/<%=staff[i].id%>/edit">Edit</a>
-            <form action="/staffs/<%=staff[i].id%>?_method=DELETE" method="POST">
-              <input type="submit" value="DELETE">
-            </form>
-            
-        </ul>
-      <% } %>
-    <p><a href ='/staffs/new'>Add New Staff</a></p>  
+    <div class="index">
+      <h3 class="header h3">Meet the team....</h3>
+        <% for(let i = 0; i < staff.length; i++){ %>
+          <ul> 
+              <a href="/staffs/<%=staff[i].id%>"><li class="name">Name: <%=staff[i].name%></li></a>
+              <li class="position">Position: <%=staff[i].position%></li> <br>
+              <a class="editbtn" href="/staffs/<%=staff[i].id%>/edit">Edit</a>
+              <form action="/staffs/<%=staff[i].id%>?_method=DELETE" method="POST"> <br>
+                <input class="delete" type="submit" value="DELETE"> <br>
+              </form>
+          </ul>
+        <% } %>
+      <p><a href ='/staffs/new'>Add New Staff</a></p> 
+    </div> 
   </body>
 </html>

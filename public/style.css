@@ -1,3 +1,108 @@
-body{
-    background: rgb(165, 112, 7);
+.index_page{
+    background:url("https://i.ibb.co/r40Zfnd/annie-spratt-Qckxruozj-Rg-unsplash.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.index{
+    background-color: rgba(80, 30, 138, 0.8);
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    border-radius: 4px;
+    line-height: 20px;
+}
+
+.header{
+    color: rgb(245, 243, 239);
+}
+.h3{
+    font-size: 30px;
+}
+.show-page{
+    background: url("https://i.ibb.co/B3ZkFxJ/christina-wocintechchat-com-L85a1k-Xq-H8-unsplash.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed
+}
+.show{
+    background:rgba(97, 86, 114, 0.8);
+    width: 40%;
+    margin-top: 250px;
+    margin-left: 100px;
+    padding: 20px;
+    height: 100%;
+}
+.edit-page{
+    background: url("https://i.ibb.co/k60Sp7v/andrew-neel-cckf4-Ts-HAuw-unsplash.jpg");
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed
+}
+.edit{
+    
+}
+.new-page{
+    background: url("https://i.ibb.co/B3ZkFxJ/christina-wocintechchat-com-L85a1k-Xq-H8-unsplash.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    height:100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed
+}
+.new{
+    background:rgba(97, 86, 114, 0.8);
+    width: 40%;
+    margin-top: 250px;
+    margin-left: 100px;
+    padding: 20px;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.name{
+   color: rgb(3, 6, 8); 
+   border: 2px solid black;
+   text-align: center;
+   padding: 3px;
+   font-size: 20px;
+   background: rgb(207, 135, 40);
+   cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.home-page{
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgb(207, 135, 40);
+}
+.editbtn{
+    color: rgb(9, 10, 10);
+    border: 2px solid black;
+    padding: 5px;
+    background: rgb(248, 247, 245);
+}
+.position{
+    color:antiquewhite;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.delete{
+    padding:4px;
 }

@@ -7,15 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
-    <h1>Employee Info Wall</h1>
-    <div class="info-wall">
-        <h2><%=staff.name%></h2>
-        <h2><%=staff.position%></h2>
-        <p>Age: <%=staff.age%></p>
-        <p>Years at U Corp: <%=staff.yearsAtCompany%></p>
-        <p>Hometown: <%=staff.hometown%></p>
+  <body class="show-page">
+    <div class="show">
+      <h1>Employee Info Wall</h1>
+      <div class="info-wall">
+          <h2><%=staff.name%></h2>
+          <h2><%=staff.position%></h2>
+          <p>Age: <%=staff.age%></p>
+          <p>Years at U Corp: <%=staff.yearsAtCompany%></p>
+          <p>Hometown: <%=staff.hometown%></p>
+      </div>
+      <a class="home-page" href="/staffs">Go to Homepage</a>
     </div>
-    <a href="/staffs">Return to home</a>
   </body>
 </html>
