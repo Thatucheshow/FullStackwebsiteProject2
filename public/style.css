@@ -49,7 +49,12 @@
     background-attachment: fixed
 }
 .edit{
-    
+    background:rgba(97, 86, 114, 0.8);
+    width: 40%;
+    margin-top: 250px;
+    margin-left: 100px;
+    padding: 20px;
+    height: 100%;
 }
 .new-page{
     background: url("https://i.ibb.co/B3ZkFxJ/christina-wocintechchat-com-L85a1k-Xq-H8-unsplash.jpg");

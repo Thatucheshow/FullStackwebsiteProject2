@@ -9,24 +9,34 @@
   </head>
   <body class="edit-page">
     <div class="edit">
-        <h1>Edit <%=staff.name%></h1>
-        <form action="/staffs/<%=staff.id%>?_method=PUT" method="POST">
+      <h1>Edit <%=staff.name%></h1>
+      <form action="/staffs/<%=staff.id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" value="<%=staff.name%>" /> <br />
         <br />
-        Position: <input type="text" name="name" value="<%=staff.position%>" />
+        Position:
+        <input type="text" name="position" value="<%=staff.position%>" />
         <br />
         <br />
-        Age: <input type="text" name="name" value="<%=staff.age%>" /> <br />
+        Age: <input type="text" name="age" value="<%=staff.age%>" /> <br />
         <br />
         Years at U Corp:
-        <input type="text" name="name" value="<%=staff.yearsAtCompany%>" /> <br />
+        <input
+          type="text"
+          name="yearsAtCompany"
+          value="<%=staff.yearsAtCompany%>"
+        />
         <br />
-        Hometown: <input type="text" name="name" value="<%=staff.hometown%>" />
+        <br />
+        Hometown:
+        <input type="text" name="hometown" value="<%=staff.hometown%>" />
         <br />
         <br />
-        <input type="submit" name="Save Changes" value="Save Changes" />
-        </form>
-        <a class="home-page" href="/staffs">Go to Homepage</a>
+        <input type="submit" name="Save Changes" value="Save Changes" /> <br />
+        <br />
+      </form>
+      <br />
+      <br />
+      <a class="home-page" href="/staffs">Go to Homepage</a>
     </div>
   </body>
 </html>
