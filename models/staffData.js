@@ -7,35 +7,35 @@ const employee  = [
       hometown: 'Atlanta, GA'
     },
     {
-      name: 'Jordan Bank',
+      name: 'John Keith',
       position: 'CFO',
       age: 26,
       yearsAtCompany: 5,
       hometown: 'New York, NY'
     },
     {
-      name: 'Dan Smith',
+      name: 'Camille Blake',
       position: 'CTO',
       age: 29,
       yearsAtCompany: 5,
       hometown: 'Dallas, TX'
     },
     {
-      name: 'Jim Cash',
+      name: 'Steve Murr',
       position: 'Director of Sales',
       age: 35,
       yearsAtCompany: 3,
       hometown: 'Houston, TX'
     },
     {
-      name: 'Dave Wright',
+      name: 'Salem Wright',
       position: 'Tech Lead',
       age: 27,
       yearsAtCompany: 2,
       hometown: 'Syracuse, NY'
     },
     {
-      name: 'Victor Victor',
+      name: 'Caroline Kiesha',
       position: 'Sales Representative',
       age: 22,
       yearsAtCompany: 1,
