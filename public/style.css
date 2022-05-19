@@ -95,6 +95,11 @@ a{
    cursor: pointer;
 }
 
+.name:hover{
+    transform: scale(1.1);
+    background: rgb(90, 86, 82);
+}
+
 ul {
     list-style: none;
 }
